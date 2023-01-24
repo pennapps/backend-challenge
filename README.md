@@ -23,7 +23,7 @@ Now you should be able to get the project up and running. In your terminal, on t
 
 ### Part 0: The Basics
 To start, make sure you are in the directory that contains `manage.py`. This is the root directory of your project. There should be two more subdirectories here: 
-- PennAppsChallenge (notice it has the same name as the root directory) - you can think of this as the entry point to our Django application. Two important files it contains is `settings.py` which contains our project settings and `urls.py` which tells our app which urls to keep an eye out for (more on this later).
+- PennAppsChallenge - you can think of this as the entry point to our Django application. Two important files it contains is `settings.py` which contains our project settings and `urls.py` which tells our app which urls to keep an eye out for (more on this later).
 - pennapps - this is an "app" that we created beforehand which contains some starter code for you. Django projects can consist of many "apps" that are usually created with `python manage.py startapp app_name` (think an app as an isolated piece of "business logic" that work together in the overall app) but ours will only use one since our project is quite basic. You will mainly be working in this directory.
 
 *Now, in order to tell Django that pennapps is an "app" in our project, ***make sure to add*** `'pennapps.apps.PennappsConfig'` to the list of installed apps in our `settings.py`.*

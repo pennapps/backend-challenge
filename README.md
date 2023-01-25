@@ -15,7 +15,7 @@ If you are not familiar with Django at all, consider checking out the [Django po
 Click the green "use this template" button to make your own copy of this repository, and clone it. Make sure to create a private repository. Clone the repo to your local machine for development. 
 
 Once you have opened the project in your favorite IDE (VSCode or PyCharm are good options), make sure you have Django installed. 
-- One way to do this is with pipenv. First install it with `pip install --user --upgrade pipenv` and then run `pipenv install` to install everything in the included `Pipfile` which is just Django for this project. Once installed run `pipenv shell` to activate the environment (you will run all subsequent Django commands in this shell). Use `exit` to exit. 
+- One way to do this is with pipenv. First install it with `pip install --user --upgrade pipenv` and then run `pipenv install` to install everything in the included `Pipfile` which is just Django for this project. Once installed, run `pipenv shell` to activate the environment (you will run all subsequent Django commands in this shell). Use `exit` to exit. 
 - Alternatively, `python -m pip install Django` should work but see documentation [here](https://docs.djangoproject.com/en/4.1/topics/install/#installing-official-release). 
 
 Make sure to check that it has properly installed by running `python -m django --version`. 

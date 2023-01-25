@@ -14,7 +14,11 @@ If you are not familiar with Django at all, consider checking out the [Django po
 
 Click the green "use this template" button to make your own copy of this repository, and clone it. Make sure to create a private repository. Clone the repo to your local machine for development. 
 
-Once you have opened the project in your favorite IDE (VSCode or PyCharm are good options), make sure you have Django installed. (`python -m pip install Django` should work but see documentation [here](https://docs.djangoproject.com/en/4.1/topics/install/#installing-official-release)). To check this run `python -m django --version`. 
+Once you have opened the project in your favorite IDE (VSCode or PyCharm are good options), make sure you have Django installed. 
+- One way to do this is with pipenv. First install it with `pip install --user --upgrade pipenv` and then run `pipenv install` to install everything in the included `Pipfile` which is just Django for this project. Once installed run `pipenv shell` to activate the environment (you will run all subsequent Django commands in this shell). Use `exit` to exit. 
+- Alternatively, `python -m pip install Django` should work but see documentation [here](https://docs.djangoproject.com/en/4.1/topics/install/#installing-official-release). 
+
+Make sure to check that it has properly installed by running `python -m django --version`. 
 
 Now you should be able to get the project up and running. In your terminal, on the same directory as `manage.py`, run `python manage.py runserver` (you may have to use `python3` instead of `python` for this and all other Django commands). This should start running the server locally usually on `127.0.0.1:8000` or `localhost:8000`. Close this with `Ctrl+C`.
 - If you get an error "Dependency on app with no migrations: pennapps", run `python manage.py makemigrations` followed by `python manage.py migrate`. Trying to run the server after this should work.
